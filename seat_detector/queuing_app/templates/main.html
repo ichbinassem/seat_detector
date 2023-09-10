@@ -1,0 +1,19 @@
+{% load static %} <!-- Add this line at the top of your template -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Virtual Queuing System</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Queuing System</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Get in Line</button>
+        </form>
+    </div>
+</body>
+</html>
