@@ -3,3 +3,4 @@ yolov3.weights
 db.sqlite3
 __pycache__
 .env
+.DS_Store

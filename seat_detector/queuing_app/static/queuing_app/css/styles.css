@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css?family=Inter:600|Poppins:500,400,600");
+:root {
+    --black: rgba(0, 0, 0, 1);
+    --secondary-color: rgba(0, 109, 90, 1);
+    --azure-radiance: rgba(0, 123, 255, 1);
+    --primary-color: rgba(0, 147, 121, 1);
+    --neutral900: rgba(17, 24, 39, 1);
+    --thunder: rgba(45, 45, 45, 1);
+    --medium-purple: rgba(151, 71, 255, 1);
+    --quick-silver: rgba(164, 164, 164, 1);
+    --grey-color: rgba(183, 183, 183, 1);
+    --golden-sand: rgba(248, 213, 126, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --font-size-xs: 21.2px;
+    --font-size-s: 11px;
+    --font-size-m: 12px;
+    --font-size-l: 14px;
+    --font-size-xl: 18px;
+    --font-size-xxl: 30px;
+    --font-size-xxxl: 60px;
+    --font-size-m2: 45px;
+    --font-family-inter: "Inter";
+    --font-family-mulish: "Mulish";
+    --font-family-poppins: "Poppins";
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-inter);
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
+    background-color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.restaurant-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    background-color: var(--white-color);
+}
+.button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+    width: 557px;  /* Ensuring all buttons have the same width */
+    text-align: center;
+    margin: 10px 0; /* Space between buttons */
+}
+
+.sign-in-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--azure-radiance);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+}
+
+.signup-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.lets-get-you-started {
+    color: #007bff;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m2);
+    font-weight: 600;
+    height: 74px;
+    letter-spacing: 0;
+    line-height: normal;
+    text-align: center;
+    width: 512px;
+}
+
+.already-have-an-account-log-in {
+    margin: 10px 0;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 400;
+    color: var(--neutral900);
+}
+
+.login-link {
+    color: var(--azure-radiance);
+    text-decoration: none;
+}
+
+.google-signup-btn {
+    padding: 10px 20px;
+    background-color: var(--azure-radiance);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 10px 0;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+}
+
+hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--quick-silver);
+    margin: 20px 0;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-input, .password-input {
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--quick-silver);
+    border-radius: 4px;
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+}
+
+.register-btn {
+    padding: 10px 20px;
+    background-color: var(--azure-radiance);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+}
+
+.code-box {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    min-height: 99px;
+    width: 527px;
+}
+
+.overlap-group {
+    align-items: flex-start;
+    background-color: var(--white-color);
+    border: 1px solid var(--quick-silver);
+    border-radius: 30px;
+    display: flex;
+    height: 64px;
+    min-width: 525px;
+    padding: 14.7px 16px;
+}
+
+.code-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: var(--font-family-inter);
+    font-size: var(--font-size-m);
+}
+
+.search-btn {
+    padding: 10px 20px;
+    background-color: var(--azure-radiance);
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: var(--font-family-poppins);
+    font-size: var(--font-size-m);
+    font-weight: 600;
+}

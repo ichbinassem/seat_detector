@@ -1,19 +1,34 @@
-{% load static %} <!-- Add this line at the top of your template -->
+{% load static %}
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Virtual Queuing System</title>
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+    <link href="{% static 'queuing_app/css/styles.css' %}" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Virtual Queuing System</h1>
-        <form method="post">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Get in Line</button>
-        </form>
+        <div class="left">
+            <img src="{% static 'queuing_app/images/view1.png' %}" alt="Restaurant Image" class="restaurant-image">
+        </div>
+        <div class="right">
+            <div class="signup-section">
+                <h1 class="lets-get-you-started">Enter the restaurant code below</h1>
+                <form method="post" class="signup-form">
+                    {% csrf_token %}
+                    <!-- Restaurant Code Input -->
+                    <div class="code-box">
+                        <div class="overlap-group">
+                            <input type="text" name="restaurant_code" placeholder="Restaurant Code" class="code-input">
+                            <button type="submit" class="search-btn">Search</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>
+
