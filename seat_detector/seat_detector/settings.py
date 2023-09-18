@@ -112,6 +112,9 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
+FAKER_LOCALE = None    
+FAKER_PROVIDERS = None 
+
 
 
 # Static files (CSS, JavaScript, Images)

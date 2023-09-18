@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+    <link href="{% static 'queuing_app/css/styles.css' %}" rel="stylesheet">
+    <style>
+        /* You can include the CSS here or link to an external stylesheet */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="{% static 'queuing_app/images/view1.png' %}" alt="Restaurant Image" class="restaurant-image">
+        </div>
+        <div class="right">
+            <button class="sign-in-btn">Sign In</button>
+            <div class="signup-section">
+                <h1 class="lets-get-you-started">Welcome Back!</h1>
+                <button class="google-signup-btn">Sign in with Google</button>
+                <hr>
+                <form method="post" class="signup-form">
+                    {% csrf_token %}
+                    <!-- Email Input -->
+                    <div class="email-box">
+                        <div class="overlap-group">
+                            <!-- Assuming your form has a field named 'email' -->
+                            <!--<img src="{% static 'queuing_app/images/email_icon.png' %}" alt="Email Icon" class="email">-->
+                            <input type="email" name="email" placeholder="Email Address" class="email-address" value="{{ form.email.value }}">
+                        </div>
+                    </div>
+                    <div class="password-box">
+                        <div class="overlap-group">
+                            <!-- Assuming your form has a field named 'password' -->
+                            <!-- <img src="{% static 'queuing_app/images/lock_icon.png' %}" alt="Lock Icon" class="lock"> -->
+                            <input type="password" name="password" placeholder="Password" class="password">
+                        </div>
+                    </div>
+                    
+                    <!-- Other form fields can be rendered similarly -->
+                
+                    <button type="submit" class="register-btn">Register</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

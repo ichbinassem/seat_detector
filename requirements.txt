@@ -20,8 +20,10 @@ debugpy==1.6.5
 decorator==5.1.1
 defusedxml==0.7.1
 Django==4.2.3
+django-faker==0.2
 entrypoints==0.4
 executing==1.2.0
+fake-factory==9999.9.9
 fastjsonschema==2.16.2
 ffmpeg-python==0.2.0
 flake8==6.0.0
@@ -65,6 +67,7 @@ MarkupSafe==2.1.1
 matplotlib-inline==0.1.6
 mccabe==0.7.0
 mistune==2.0.4
+model-bakery==1.15.0
 nbclassic==0.4.8
 nbclient==0.7.2
 nbconvert==7.2.8

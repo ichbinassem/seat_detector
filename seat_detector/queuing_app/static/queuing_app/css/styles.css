@@ -217,3 +217,12 @@ input[type="email"], input[type="password"] {
     font-size: var(--font-size-m);
     font-weight: 600;
 }
+
+.layout {
+    display: inline-flex;
+    height: 1024px;
+    padding: 210px 190.547px 210.202px 713px;
+    justify-content: flex-end;
+    align-items: center;
+    flex-shrink: 0;
+}

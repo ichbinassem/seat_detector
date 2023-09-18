@@ -16,12 +16,12 @@
         <div class="right">
             <div class="signup-section">
                 <h1 class="lets-get-you-started">Enter the restaurant code below</h1>
-                <form method="post" class="signup-form">
+                <form method="post" class="signup-form" action="{% url 'main_page' %}">
                     {% csrf_token %}
                     <!-- Restaurant Code Input -->
                     <div class="code-box">
                         <div class="overlap-group">
-                            <input type="text" name="restaurant_code" placeholder="Restaurant Code" class="code-input">
+                            <input type="text" name="restaurant_code" placeholder="Restaurant Code" class="code-input" >
                             <button type="submit" class="search-btn">Search</button>
                         </div>
                     </div>

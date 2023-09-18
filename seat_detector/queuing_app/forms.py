@@ -9,3 +9,10 @@ class QueueEntryForm(forms.ModelForm):
 class SignupForm(forms.Form):
     email = forms.EmailField()
     password = forms.CharField(widget=forms.PasswordInput)
+
+class SigninForm(forms.Form):
+    email = forms.EmailField()
+    password = forms.CharField(widget=forms.PasswordInput)
+
+class RestaurantCodeForm(forms.Form):
+    code = forms.CharField(label='Enter Restaurant Code', max_length=10)
